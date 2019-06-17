@@ -109,7 +109,7 @@ int main(int argc, char **argv) {
 		return 3;
 	}
 
-	fd = fopen("fct_log", "w");
+	fd = fopen("fct_log", "a");
 
 	struct timeval time_start, time_finish;
 
