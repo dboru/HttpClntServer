@@ -109,7 +109,7 @@ int main(int argc, char **argv) {
 		return 3;
 	}
 
-	fd = fopen("fct_log", "a");
+	//fd = fopen("fct_log", "a");
 
 	struct timeval time_start, time_finish;
 
@@ -130,8 +130,8 @@ int main(int argc, char **argv) {
 
 	uint64_t duration_us=(time_finish.tv_sec - time_start.tv_sec) * 1000000 + time_finish.tv_usec - time_start.tv_usec;
 
-	//printf("FCT %" PRIu64 "\n",duration_us);
-	fprintf(fd, "%s %"PRIu64 "\n", argv[3],duration_us);
+	printf("FCT %" PRIu64 "\n",duration_us);
+	//fprintf(fd, "%s %"PRIu64 "\n", argv[3],duration_us);
 
 	//int secs = nanodiff / (1000*1000*1000);
 	//long nsecs = nanodiff % (1000*1000*1000);
