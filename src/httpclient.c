@@ -130,7 +130,7 @@ int main(int argc, char **argv) {
 
 	uint64_t duration_us=(time_finish.tv_sec - time_start.tv_sec) * 1000000 + time_finish.tv_usec - time_start.tv_usec;
 
-	printf("FCT %" PRIu64 "\n",duration_us);
+	printf("%s %" PRIu64 "\n",argv[3],duration_us);
 	//fprintf(fd, "%s %"PRIu64 "\n", argv[3],duration_us);
 
 	//int secs = nanodiff / (1000*1000*1000);
